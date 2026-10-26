@@ -5,12 +5,12 @@
   "description": "Uttarkunth Stays 3.0 — Himalayan Hospitality & Authentic Local Accommodations",
   "scripts": {
     "dev": "next dev",
-    "build": "opennextjs-cloudflare build",
+    "build": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion",
     "start": "next start",
     "lint": "next lint",
-    "build:worker": "opennextjs-cloudflare build",
-    "preview": "opennextjs-cloudflare build && wrangler dev",
-    "deploy": "opennextjs-cloudflare build && wrangler deploy",
+    "build:worker": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion",
+    "preview": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion && wrangler dev",
+    "deploy": "opennextjs-cloudflare build --dangerouslyUseUnsupportedNextVersion && wrangler deploy",
     "test": "node --experimental-strip-types --test tests/booking-pricing.test.ts tests/date-validation.test.ts tests/commission.test.ts"
   },
   "dependencies": {
